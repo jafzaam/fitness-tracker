@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🏃‍♂️ Fitness Tracker (Gamified & Adaptive)
 
-## Getting Started
+## 🎯 Project Vision
+A modern fitness tracker built with Next.js, focusing on **Intelligent Data Harmonization** and **Gamification**. 
+**Core Philosophy:**
+- 🚫 **No "Simple Sync"**: Filter duplicated data (Deduplication).
+- 🚫 **No "Logging Fatigue"**: Extremely easy & fast UI for input.
+- 🚫 **No "Guilt-Driven"**: Adaptive Physiology Engine based on real readiness (RPE).
 
-First, run the development server:
+## 📊 Current Progress Roadmap (Save Point)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### ✅ Phase 1: Project Initialization & UI Base
+- [x] Initialized Next.js project (App Router, Tailwind, TypeScript).
+- [x] Set up basic pages (`/`, `/exercise`, `/food`, `/profile`).
+- [x] Created mock UI for Dashboard and Calorie Tracking.
+- [x] Configured AI Agent Skills (YAGNI, Token Saver, Agent Dev Thai, Pordee).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### ✅ Phase 2: Database Architecture
+- [x] Installed `prisma@5` and `@prisma/client@5`.
+- [x] Configured SQLite for local/offline-first storage (`dev.db`).
+- [x] Designed YAGNI Schema: `User`, `CustomFood`, `Meal`, `Activity`, `Badge`, `UserBadge`.
+- [x] Created and successfully ran `scripts/test-db.ts` to verify full CRUD and relationships.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### ⏳ Phase 3: UI & Server Actions (จุดเริ่มต้นสำหรับรอบหน้า)
+- [ ] **[NEXT UP]** สร้างหน้าจอ (UI) สำหรับบันทึก Activity และ Meal ให้กรอกง่ายที่สุด (ลด Logging Fatigue ตามที่วางแผนไว้).
+- [ ] เขียน Server Actions เพื่อบันทึกข้อมูลลงฐานข้อมูลจริง.
+- [ ] เชื่อมต่อ Dashboard (`/`) กับ Database เพื่อดึงข้อมูล User และสถิติ PB.
+- [ ] สร้างหน้าระบบเหรียญรางวัล (Gamification/Badges Showcase).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 สำหรับนักพัฒนา (หรือ AI ในรอบถัดไป)
+1. รัน `npm run dev` เพื่อเปิดหน้าเว็บ
+2. รัน `npx prisma studio` เพื่อดูฐานข้อมูล
+3. **คำสั่งเริ่มงาน:** "เริ่มทำ Phase 3 ต่อได้เลย (หน้าบันทึก Activity/Meal)"
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Last Updated: เสร็จสิ้น Phase 2 และหยุดพักการทำงานชั่วคราว*
